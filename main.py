@@ -10,7 +10,7 @@ app = FastAPI(title="Soil Quality IoT API")
 model = joblib.load('rf_model.pkl')
 
 # 3. ສ້າງຕາຕະລາງແປງຄ່າຕົວເລກ (0, 1, 2, 3) ໃຫ້ເປັນຂໍ້ຄວາມ
-class_mapping = {0: "Moderate", 1: "Excellent", 2: "Good", 3: "Poor""}
+class_mapping = {0: "Moderate", 1: "Excellent", 2: "Good", 3: "Poor"}
 
 # 4. ກຳນົດຮູບແບບຂໍ້ມູນທີ່ IoT ຈະສົ່ງມາ (7 ຄ່າຫຼັກ)
 class SoilInput(BaseModel):
